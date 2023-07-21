@@ -282,7 +282,7 @@ public class HRSBusinessLogic extends BaseClass {
 		verifyElementPresent(LoginPage.objHistoricalBPblock,"BPblock");
 		String BP3=getText(LoginPage.objHistoricalBPblock);
 		System.out.println(BP3);
-//		getWebDriver().close();
+		getWebDriver().close();
 	}	
 
 
