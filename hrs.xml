@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android" parallel="false" thread-count="1">
+
+<parameter name="browserType" value="chrome"/>
+<parameter name="url" value="https://www.google.com/"></parameter>
+
+	<listeners>
+		<listener class-name="com.utility.ExtentReporter" />
+	</listeners>
+
+	 <test name="HRS">
+		<parameter name="portno" value="4723"></parameter>
+		<parameter name="deviceName" value="R9BN2019CWJ"></parameter>
+	<classes>
+		<class name="com.hrs.test.Homepage">
+	<!--	<methods>
+			<include name="verifyhomePage"></include>
+			<include name="verifyContactClinicianMessageOption"></include>
+			<include name="verifyBloodPressure"></include>
+		</methods>-->
+		</class>
+	
+ 		<!--  <class name="com.hrs.test.xyz"/> 
+ 	 	<class name="com.hrs.test.abc"/>-->
+	</classes>
+	</test>
+</suite>

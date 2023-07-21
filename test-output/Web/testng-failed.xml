@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Web]">
+  <parameter name="url" value="https://www.google.com/"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.utility.ExtentReporter"/>
+  </listeners>
+  <test thread-count="1" name="HRS(failed)">
+    <parameter name="portno" value="4723"/>
+    <parameter name="deviceName" value="32181JEGR06049"/>
+    <classes>
+      <class name="com.hrs.test.ClinicianConnect">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="verifyPatientListGeneralDetailsDisplay"/>
+        </methods>
+      </class> <!-- com.hrs.test.ClinicianConnect -->
+    </classes>
+  </test> <!-- HRS(failed) -->
+</suite> <!-- Failed suite [Web] -->
